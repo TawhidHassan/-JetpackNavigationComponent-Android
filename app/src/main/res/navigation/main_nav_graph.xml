@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.jetpacknavigationexample.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_chooseReceiverFragment"
             app:destination="@id/chooseReceiverFragment"
@@ -23,32 +23,30 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_homeFragment_to_viewTransactionsFragment"
             app:destination="@id/viewTransactionsFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/viewBalanceFragment"
         android:name="com.example.jetpacknavigationexample.ViewBalanceFragment"
-        android:label="fragment_view_balance"
+        android:label="Balance"
         tools:layout="@layout/fragment_view_balance" />
     <fragment
         android:id="@+id/viewTransactionsFragment"
         android:name="com.example.jetpacknavigationexample.ViewTransactionsFragment"
-        android:label="fragment_view_transactions"
+        android:label="Transiction"
         tools:layout="@layout/fragment_view_transactions" />
     <fragment
         android:id="@+id/chooseReceiverFragment"
         android:name="com.example.jetpacknavigationexample.ChooseReceiverFragment"
-        android:label="fragment_choose_receiver"
-        tools:layout="@layout/fragment_choose_receiver" >
+        android:label="Chose user"
+        tools:layout="@layout/fragment_choose_receiver">
         <action
             android:id="@+id/action_chooseReceiverFragment_to_sendCashFragment"
             app:destination="@id/sendCashFragment" />
@@ -56,8 +54,8 @@
     <fragment
         android:id="@+id/sendCashFragment"
         android:name="com.example.jetpacknavigationexample.SendCashFragment"
-        android:label="fragment_send_cash"
-        tools:layout="@layout/fragment_send_cash" >
+        android:label="send case- {reciverName}"
+        tools:layout="@layout/fragment_send_cash">
         <argument
             android:name="reciverName"
             app:argType="string" />
@@ -78,8 +76,8 @@
     <dialog
         android:id="@+id/confirmDialogFragment"
         android:name="com.example.jetpacknavigationexample.ConfirmDialogFragment"
-        android:label="fragment_confirm_dialog"
-        tools:layout="@layout/fragment_confirm_dialog" >
+        android:label="confrim"
+        tools:layout="@layout/fragment_confirm_dialog">
         <argument
             android:name="reciverName"
             app:argType="string" />
