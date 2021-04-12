@@ -35,5 +35,12 @@ class SendCashFragment : Fragment(R.layout.fragment_send_cash){
                 .actionSendCashFragmentToConfirmDialogFragment(receiverName, amount)
             findNavController().navigate(action)
         }
+        btn_done.setOnClickListener {
+            val action = SendCashFragmentDirections.actionSendCashFragmentToHomeFragment()
+            findNavController().navigate(action)
+        }
+        btn_cancel.setOnClickListener {
+            findNavController().popBackStack(R.id.homeFragment,true)
+        }
     }
 }
