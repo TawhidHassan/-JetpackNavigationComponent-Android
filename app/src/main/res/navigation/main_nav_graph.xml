@@ -85,4 +85,9 @@
             android:name="amount"
             app:argType="long" />
     </dialog>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.jetpacknavigationexample.SettingsFragment"
+        android:label="Settingts"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

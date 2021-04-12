@@ -19,8 +19,10 @@ class SendCashFragment : Fragment(R.layout.fragment_send_cash){
         super.onViewCreated(view, savedInstanceState)
 
         val receiverName = args.reciverName
-
-
+        et_amount.setText(SampleData.defaultAmount.value.toString())
+        SampleData.defaultAmount.observe(viewLifecycleOwner){
+            et_amount.setText(it.toString())
+        }
         tv_receiver.text = "Send cash to $receiverName"
 
         btn_send.setOnClickListener {
