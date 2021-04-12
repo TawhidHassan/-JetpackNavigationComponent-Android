@@ -12,11 +12,7 @@ class ViewTransactionsFragment : Fragment(R.layout.fragment_view_transactions){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_test.setOnClickListener {
-            val action = ViewTransactionsFragmentDirections
-                .actionViewTransactionsFragmentToSendCashFragment("testname",1000)
-            findNavController().navigate(action)
-        }
+
 
     }
 }

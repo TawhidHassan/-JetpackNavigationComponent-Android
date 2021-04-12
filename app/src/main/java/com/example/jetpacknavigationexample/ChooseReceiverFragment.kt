@@ -18,7 +18,7 @@ class ChooseReceiverFragment : Fragment(R.layout.fragment_choose_receiver){
             val receiverName = et_receiver_name.text.toString()
 
 
-            val action=ChooseReceiverFragmentDirections .actionChooseReceiverFragmentToSendCashFragment(receiverName,400)
+            val action=ChooseReceiverFragmentDirections .actionChooseReceiverFragmentToSendCashFragment(receiverName)
             findNavController().navigate(action)
         }
     }
