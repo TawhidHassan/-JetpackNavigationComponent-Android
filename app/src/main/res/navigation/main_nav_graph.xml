@@ -41,7 +41,11 @@
         android:id="@+id/viewTransactionsFragment"
         android:name="com.example.jetpacknavigationexample.ViewTransactionsFragment"
         android:label="Transiction"
-        tools:layout="@layout/fragment_view_transactions" />
+        tools:layout="@layout/fragment_view_transactions" >
+        <action
+            android:id="@+id/action_viewTransactionsFragment_to_sendCashFragment"
+            app:destination="@id/sendCashFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chooseReceiverFragment"
         android:name="com.example.jetpacknavigationexample.ChooseReceiverFragment"
@@ -71,6 +75,9 @@
             app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.navcomponent.com/{reciverName}" />
 
     </fragment>
     <dialog
